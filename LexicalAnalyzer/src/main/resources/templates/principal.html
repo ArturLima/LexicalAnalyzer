@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</meta>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/lexico.js"></script>
+<title>Compiladores</title>
+</head>
+<body>
+	<div class="container">
+		<h2>Analisador Léxico - Compiladores</h2>
+		<form>
+			<div class="form-group">
+				<label for="comment">Código JavaScript :)</label>
+				<textarea class="form-control" rows="5" id="codigoFonte"></textarea>
+			</div>
+			<button id="btAnalisar" type="button" class="btn">Analisar</button>
+		</form>
+
+		<div id="divTabela" class="table-responsive" style="display:none;">
+			<table class="table" id="tabelaToken">
+				<thead>
+					<tr>
+						<th>LEXEMA</th>
+						<th>PADRAO</th>
+						<th>LINHA</th>
+						<th>COLUNA</th>						
+						<th>TOKEN</th>												
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
